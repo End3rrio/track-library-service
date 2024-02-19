@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  track:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "80:80"
+
+volumes:
+  postgres_data:
